@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #image{
+            width:150px;
+            height:100px;
+        }
+        #image:hover{
+            opacity: 0.6;
+        }
+        #display>img{
+            width:50px;
+            height:50px;
+        }
+        #loginform{
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>6.Counter</h1>
+    <p id="counter">0</p>
+    <input type="submit" value="Counter" id="counterbtn">
+
+    <h1>7.keyboard event</h1>
+    <textarea rows="10" cols="20" id="textarea"></textarea>
+    <p id="wordcount"></p>
+
+    <h1>3.Interatice button</h1>
+    <button id="btn" class="btn" value="Click Me">Click Me</button>
+
+    <h1>4.image</h1>
+    <img src="https://media.istockphoto.com/id/1450268558/photo/summer-selfie.jpg?s=1024x1024&w=is&k=20&c=mkksk_FLmmmpevE7-JPzm6cTCuEqDc_OjFl0s7gY0Xc=" id="image"> 
+
+    <h1>5.mouse tracking</h1>
+    <p id="mouse">x=0,y=0</p>
+
+    <h1>1.image using promise</h1>
+    <div id="display">
+
+    </div>
+
+    <h1>2.form</h1>
+    <form id="registerform">
+        <input type="text" id="unamer">
+        <input type="password" id="passr">
+        <input type="submit" value="register" id="register">
+
+    </form>
+    <form id="loginform">
+        <input type="text" id="unamel">
+        <input type="password" id="passl">
+        <input type="submit" value="login" id="login">
+        <input type="submit" value="logout" id="logout">
+
+    </form>
+    <h1>8.user management</h1>
+    <section id="main_container">
+        <div id="container1">
+            <button id="add-user-btn">Add New User</button>
+            <div id="users">
+                <h4>User List</h4>
+                <div id="user-list"></div>
+            </div>
+        </div>
+
+        <form id="popup" class="myform">
+            <label>Name:</label>
+            <input type="text" id="user-name" placeholder="Enter Name" required>
+            <label>Email:</label>
+            <input type="email" id="user-email" placeholder="Enter Email" required>
+            <button type="submit" id="submit-button">Add/Update User</button>
+        </form>
+        <div id="popupbg" class="popupbg"></div>
+    </section>
+</body>
+<script src="./index.js"></script>
+</html>
